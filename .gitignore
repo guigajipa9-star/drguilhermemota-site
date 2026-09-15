@@ -1,0 +1,36 @@
+# Histórico de versões (não precisa versionar tudo)
+versions/
+
+# Drafts e arquivos de revisão
+v2-review/
+
+# Landing pages avulsas (não-deployadas)
+04-landing-pages/
+
+# Integrações API - commita scripts, ignora credenciais e relatórios
+06-integracoes-api/credentials/
+06-integracoes-api/reports/
+06-integracoes-api/relatorios/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Zip temporário (gerado pra deploy manual)
+drguilhermemota-site.zip
+*.zip
+
+# Netlify
+.netlify/
+
+# Logs
+*.log

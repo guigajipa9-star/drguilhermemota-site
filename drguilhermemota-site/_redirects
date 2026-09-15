@@ -1,0 +1,6 @@
+# Redirecionamentos Netlify (formato alternativo)
+# HTTP para HTTPS
+http://drguilhermemota.com.br/*  https://drguilhermemota.com.br/:splat  301!
+
+# WWW para não-www
+https://www.drguilhermemota.com.br/*  https://drguilhermemota.com.br/:splat  301!

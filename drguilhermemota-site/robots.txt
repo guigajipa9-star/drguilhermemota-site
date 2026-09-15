@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Bloqueia páginas internas que não devem ser indexadas
+Disallow: /404.html
+Disallow: /*?
+
+# Sitemap
+Sitemap: https://drguilhermemota.com.br/sitemap.xml

@@ -1,0 +1,55 @@
+# ============================================
+# CONFIGURAÇÃO NETLIFY — Dr. Guilherme Mota
+# ============================================
+
+# Configuração de build (site estático)
+[build]
+  publish = "."
+
+# Headers de segurança
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Cache para imagens (1 ano)
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache para CSS/JS (1 semana)
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Redirecionamentos
+# HTTP → HTTPS (automático no Netlify, mas explícito)
+[[redirects]]
+  from = "http://drguilhermemota.com.br/*"
+  to = "https://drguilhermemota.com.br/:splat"
+  status = 301
+  force = true
+
+# WWW → não-www
+[[redirects]]
+  from = "https://www.drguilhermemota.com.br/*"
+  to = "https://drguilhermemota.com.br/:splat"
+  status = 301
+  force = true
+
+# Página 404 personalizada
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
