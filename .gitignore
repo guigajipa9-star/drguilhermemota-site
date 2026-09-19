@@ -4,9 +4,6 @@ versions/
 # Drafts e arquivos de revisão
 v2-review/
 
-# Landing pages avulsas (não-deployadas)
-04-landing-pages/
-
 # Integrações API - commita scripts, ignora credenciais e relatórios
 06-integracoes-api/credentials/
 06-integracoes-api/reports/

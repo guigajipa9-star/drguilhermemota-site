@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Psiquiatra Infantil Online | Dr. Guilherme Mota</title>
+  <meta name="description" content="Psiquiatra infantil online para todo o Brasil. TDAH, ansiedade e depressão em crianças e adolescentes. Atendimento pela Akatú Psiquiatria. CRM-RJ 52.125913-0." />
+  <meta name="theme-color" content="#f4efe4" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="fotos-consultorio/web/hero-desktop.webp?v=2" type="image/webp" media="(min-width: 901px)" />
+  <link rel="preload" as="image" href="fotos-consultorio/web/hero-mobile.webp?v=2" type="image/webp" media="(max-width: 900px)" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Physician","name":"Dr. Guilherme Mota","url":"https://drguilhermemota.com.br","telephone":"+55 51 98330-0503","image":"https://drguilhermemota.com.br/perfil_novo.png","address":{"@type":"PostalAddress","addressLocality":"Rio de Janeiro","addressRegion":"RJ","addressCountry":"BR"},"identifier":"CRM-RJ 52.125913-0","medicalSpecialty":"Pediatric psychiatry"}
+  </script>
+
+  <!-- ============================================ -->
+  <!-- GOOGLE ANALYTICS 4 (GA4)                     -->
+  <!-- ID: G-VG15BYNMHL                            -->
+  <!-- ============================================ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VG15BYNMHL"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18436097662"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VG15BYNMHL');
+    gtag('config', 'AW-18436097662');
+  </script>
+
+  <!-- ============================================ -->
+  <!-- GOOGLE ADS (conversão)                       -->
+  <!-- Substitua AW-XXXXXXXXX pelo seu ID do Google Ads -->
+  <!-- ============================================ -->
+  <!-- GOOGLE ADS — Conversão (WhatsApp click)       -->
+  <!-- ID: AW-18436097662 | Valor: R$ 500          -->
+  <!-- ============================================ -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () { if (typeof(url) != 'undefined') window.location = url; };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18436097662',
+        'value': 500.0,
+        'currency': 'BRL',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+  <style>
+    :root {
+      --studio: #a79954;
+      --olive: #5f5a32;
+      --ink: #1c1a12;
+      --muted: #5c5748;
+      --cream: #f4efe4;
+      --paper: #fffaf1;
+      --sand: #e7dfcc;
+      --deep: #2a281c;
+      --line: rgba(28, 26, 18, 0.12);
+      --wa: #128c4b;
+      --radius: 24px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Outfit, system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.55;
+    }
+    ::selection { background: var(--studio); color: var(--paper); }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    :focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; }
+    .skip {
+      position: absolute;
+      left: -999px;
+      top: 8px;
+      background: var(--deep);
+      color: var(--paper);
+      padding: 8px 12px;
+      z-index: 50;
+    }
+    .skip:focus { left: 8px; }
+    .wrap { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--deep);
+      color: var(--paper);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 14px 22px;
+      border-radius: 999px;
+      border: 0;
+      transition: transform .2s ease, background .2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); background: #3b3828; }
+    .btn-ghost {
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+    .btn-ghost:hover { background: var(--paper); }
+    .btn-wa { background: var(--wa); }
+    .btn-wa:hover { background: #0f7a41; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(244, 239, 228, 0.9);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 70px;
+      gap: 16px;
+    }
+    .brand {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.05rem;
+    }
+    .nav-links { display: flex; gap: 22px; color: var(--muted); font-size: 0.94rem; }
+    .nav-links a { text-decoration: none; }
+    h1, h2, h3 { font-family: Fraunces, Georgia, serif; line-height: 1.12; font-weight: 600; }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 650;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--olive);
+      margin-bottom: 12px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      min-height: calc(100svh - 70px);
+      background: var(--studio);
+    }
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 64px 7vw 56px;
+      background: var(--cream);
+    }
+    h1 { font-size: clamp(2.15rem, 4.6vw, 3.7rem); max-width: 16ch; }
+    .lede { font-size: 1.12rem; color: var(--muted); max-width: 44ch; margin: 18px 0 28px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
+    .chip {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+    .hero-photo { position: relative; min-height: 520px; }
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 18%;
+      position: absolute;
+      inset: 0;
+    }
+    .section { padding: 88px 0; scroll-margin-top: 86px; }
+    .section.sand { background: var(--sand); }
+    .section.paper { background: var(--paper); }
+    .section-head { max-width: 640px; margin-bottom: 36px; }
+    h2 { font-size: clamp(1.85rem, 3vw, 2.6rem); margin-bottom: 10px; }
+    .section-head p, .muted { color: var(--muted); }
+    .micro-cta { margin-top: 28px; font-size: 0.95rem; color: var(--muted); }
+    .micro-cta a { color: var(--wa); font-weight: 600; text-decoration: none; }
+    .micro-cta a:hover { text-decoration: underline; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+    }
+    .sand .card { background: var(--cream); }
+    .card h3 { font-size: 1.18rem; margin-bottom: 8px; }
+    .card p { color: var(--muted); font-size: 0.96rem; }
+    .num {
+      font-family: Fraunces, Georgia, serif;
+      color: var(--olive);
+      font-size: 1.6rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .about {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .about img {
+      width: 100%;
+      height: 560px;
+      object-fit: cover;
+      object-position: 50% 10%;
+      border-radius: 32px;
+    }
+    .about p { color: var(--muted); margin: 12px 0; }
+    .modes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .mode {
+      background: var(--deep);
+      color: var(--cream);
+      border-radius: 28px;
+      padding: 32px;
+    }
+    .mode.light { background: var(--paper); color: var(--ink); border: 1px solid var(--line); }
+    .mode ul { margin: 16px 0 24px 18px; }
+    .mode li { margin: 8px 0; }
+    .faq { display: grid; gap: 10px; }
+    details {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 18px;
+    }
+    summary { cursor: pointer; font-weight: 600; }
+    details p { color: var(--muted); margin-top: 8px; }
+    .cta {
+      background: var(--deep);
+      color: var(--cream);
+      border-radius: 32px;
+      padding: 48px 40px;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+    }
+    .cta p { color: #d9d0b4; margin-top: 8px; }
+    .proof {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 32px;
+      align-items: center;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 32px;
+      margin-top: 32px;
+    }
+    .proof-score {
+      text-align: center;
+      padding: 20px 24px;
+      background: var(--cream);
+      border-radius: 16px;
+    }
+    .proof-score .num {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 2.4rem;
+      color: var(--ink);
+      font-weight: 700;
+      display: block;
+    }
+    .proof-score .stars { color: #f59e0b; font-size: 1.2rem; margin: 4px 0; }
+    .proof-score .count { color: var(--muted); font-size: 0.85rem; }
+    .proof-reviews { display: grid; gap: 16px; }
+    .proof-review {
+      background: var(--cream);
+      border-left: 3px solid var(--studio);
+      padding: 12px 16px;
+      border-radius: 0 12px 12px 0;
+    }
+    .proof-review p { color: var(--muted); font-size: 0.9rem; font-style: italic; }
+    .proof-review .author { color: var(--olive); font-size: 0.8rem; font-weight: 600; margin-top: 4px; font-style: normal; }
+    .cta-inline {
+      margin-top: 32px;
+      text-align: center;
+    }
+    .signals { display: grid; gap: 12px; }
+    .signal {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 18px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+    .signal .check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--studio);
+      color: var(--paper);
+      display: grid;
+      place-items: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .signal h3 { font-size: 1rem; margin: 0 0 4px; font-family: Fraunces, Georgia, serif; }
+    .signal p { color: var(--muted); font-size: 0.9rem; margin: 0; }
+    footer { padding: 36px 0 120px; color: var(--muted); font-size: 0.9rem; }
+    .foot { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .float-wa {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: var(--wa);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(18, 140, 75, 0.35);
+      z-index: 30;
+    }
+    .sticky-bar { display: none; }
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: 0; }
+      .hero-copy { padding: 36px 20px 28px; }
+      .hero-photo { min-height: 420px; }
+      .hero-photo img { position: static; width: 100%; height: 420px; object-fit: cover; object-position: 50% 8%; }
+      .grid-2, .grid-3, .grid-4, .about, .modes, .cta { grid-template-columns: 1fr; }
+      .about img { width: 100%; height: 420px; object-fit: cover; }
+      .cta { flex-direction: column; align-items: flex-start; }
+      .sticky-bar {
+        display: block;
+        position: fixed;
+        left: 0; right: 0; bottom: 0;
+        background: rgba(244, 239, 228, 0.96);
+        border-top: 1px solid var(--line);
+        padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+        z-index: 25;
+      }
+      .float-wa { display: none; }
+      footer { padding-bottom: 130px; }
+      .proof { grid-template-columns: 1fr; text-align: center; }
+      .proof-score { max-width: 200px; margin: 0 auto; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#topo">Dr. Guilherme Mota</a>
+      <nav class="nav-links">
+        <a href="#quando">Quando procurar</a>
+        <a href="#consulta">Como funciona</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-wa" data-wa onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5551983300503?text=Ol%C3%A1!%20Vi%20o%20site%20de%20psiquiatria%20infantil%20e%20gostaria%20de%20agendar%20uma%20consulta%20para%20meu%20filho(a)." target="_blank" rel="noopener">Agendar</a>
+    </div>
+  </header>
+
+  <main id="topo">
+    <section class="hero">
+      <div class="hero-copy" id="conteudo">
+        <span class="eyebrow">Psiquiatra infantil online</span>
+        <h1>Escuta de verdade para o seu filho.<br>Sem pressa, sem rótulo fácil.</h1>
+        <p class="lede">Para pais que notaram mudanças no comportamento do filho. TDAH, ansiedade e depressão em crianças e adolescentes. Atendimento online para todo o Brasil.</p>
+        <div class="hero-actions">
+          <a class="btn btn-wa" data-wa onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5551983300503?text=Ol%C3%A1!%20Vi%20o%20site%20de%20psiquiatria%20infantil%20e%20gostaria%20de%20agendar%20uma%20consulta%20para%20meu%20filho(a)." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+          <a class="btn btn-ghost" href="#quando">Quando procurar ajuda</a>
+        </div>
+        <div class="chips">
+          <span class="chip">CRM-RJ 52.125913-0</span>
+          <span class="chip">Residência · Marinha do Brasil</span>
+          <span class="chip">Nota fiscal para reembolso</span>
+          <span class="chip">Atendimento CFM-compliant</span>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <picture>
+          <source media="(max-width: 900px)" type="image/webp" srcset="fotos-consultorio/web/hero-mobile.webp?v=2" />
+          <source media="(max-width: 900px)" type="image/jpeg" srcset="fotos-consultorio/web/hero-mobile.jpg?v=2" />
+          <source type="image/webp" srcset="fotos-consultorio/web/hero-desktop.webp?v=2" />
+           <img src="fotos-consultorio/web/hero-desktop.jpg?v=2" width="1400" height="2100" alt="Dr. Guilherme Mota, médico com atuação em psiquiatria infantil" />
+        </picture>
+      </div>
+    </section>
+
+    <section class="section" id="quando">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Sinais de alerta</span>
+          <h2>Nem toda mudança é “fase”.</h2>
+          <p>Se alguns desses sinais atravessam semanas e a casa ou a escola já sentem, vale uma avaliação.</p>
+        </div>
+        <div class="signals">
+          <div class="signal">
+            <span class="check">✓</span>
+            <div><h3>Irritabilidade frequente</h3><p>Explosões, oposição constante ou humor que mudou e não volta.</p></div>
+          </div>
+          <div class="signal">
+            <span class="check">✓</span>
+            <div><h3>Queda na escola</h3><p>Notas, concentração ou organização pioraram sem causa clara.</p></div>
+          </div>
+          <div class="signal">
+            <span class="check">✓</span>
+            <div><h3>Isolamento</h3><p>Perdeu interesse em amigos, brincadeiras ou no que gostava de fazer.</p></div>
+          </div>
+          <div class="signal">
+            <span class="check">✓</span>
+            <div><h3>Sono ou apetite alterados</h3><p>Dorme demais, de menos, ou a fome mudou de forma persistente.</p></div>
+          </div>
+          <div class="signal">
+            <span class="check">✓</span>
+            <div><h3>Queixas físicas</h3><p>Dor de cabeça ou barriga recorrente, sem causa clínica definida.</p></div>
+          </div>
+          <div class="signal">
+            <span class="check">✓</span>
+            <div><h3>Medo que trava o dia</h3><p>Preocupação excessiva, recusa escolar ou ansiedade que limita a rotina.</p></div>
+          </div>
+        </div>
+        <div class="cta-inline">
+          <a class="btn btn-wa" data-wa onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5551983300503?text=Ol%C3%A1!%20Identifiquei%20alguns%20desses%20sinais%20no%20meu%20filho%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Falar comigo no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sand" id="consulta">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Primeira consulta</span>
+          <h2>O que acontece no encontro.</h2>
+          <p>Pais chegam tensos. O objetivo é sair com clareza, não com um diagnóstico apressado.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card"><span class="num">1</span><h3>Você conta</h3><p>O que vê em casa, na escola e desde quando isso mudou.</p></article>
+          <article class="card"><span class="num">2</span><h3>Escuto seu filho</h3><p>No ritmo dele. Criança e adolescente não são adulto em miniatura.</p></article>
+          <article class="card"><span class="num">3</span><h3>Explico em português</h3><p>Hipóteses claras, sem jargão. Você entende o raciocínio.</p></article>
+          <article class="card"><span class="num">4</span><h3>Combinamos o plano</h3><p>Com ou sem medicação, conforme o caso. Sempre com o próximo passo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sand" id="proof">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Avaliações</span>
+          <h2>O que dizem outros pais.</h2>
+          <p>5,0 estrelas no Google — 24 avaliações de pais que passaram pela mesma dúvida.</p>
+        </div>
+        <div class="proof">
+          <div class="proof-score">
+            <span class="num">5,0</span>
+            <div class="stars">★★★★★</div>
+            <div class="count">24 avaliações no Google</div>
+          </div>
+          <div class="proof-reviews">
+            <div class="proof-review">
+              <p>"Excelente psiquiatra, atendimento humanizado e gentil, com muita propriedade em aplicar e acompanhar o paciente durante o tratamento."</p>
+              <div class="author">— Vanusa, paciente</div>
+            </div>
+            <div class="proof-review">
+              <p>"Depois de duas experiências ruins com profissionais anteriores, fui muito bem recebido e atendido. Excelente."</p>
+              <div class="author">— Paulo, paciente</div>
+            </div>
+            <div class="proof-review">
+              <p>"Esse médico tem uma escuta muito boa. Sinto-me acolhida. Indico sempre e todos compartilham da mesma impressão positiva."</p>
+              <div class="author">— Ananda, paciente</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section paper" id="especialidades">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Como posso ajudar</span>
+          <h2>Infância e adolescência.</h2>
+        </div>
+        <div class="grid-4">
+          <article class="card"><h3>TDAH</h3><p>Avaliação cuidadosa. Diagnóstico não se faz em cinco minutos.</p></article>
+          <article class="card"><h3>Ansiedade</h3><p>Quando a preocupação passa do esperado para a idade e trava o cotidiano.</p></article>
+          <article class="card"><h3>Depressão</h3><p>Apatia, irritação ou desespero na adolescência merecem escuta séria.</p></article>
+          <article class="card"><h3>Esgotamento</h3><p>Escola, telas e futuro. Às vezes o corpo e a mente pedem ajuda juntos.</p></article>
+        </div>
+        <p class="micro-cta">Ficou com dúvidas? <a href="https://wa.me/5551983300503?text=Ol%C3%A1!%20Vi%20o%20site%20e%20quero%20conversar%20sobre%20psiquiatria%20infantil." target="_blank" rel="noopener">Fale comigo no WhatsApp</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="tdah">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Quando procurar um psiquiatra para TDAH</span>
+          <h2>TDAH em crianças e adolescentes: avaliação cuidadosa, sem rótulo fácil.</h2>
+        </div>
+        <p class="lede">Se você percebe dificuldade de concentração, agitação, impulsividade ou impacto na escola e em casa, é natural buscar um <strong>psiquiatra TDAH</strong> para entender o que está acontecendo. O diagnóstico de TDAH não se resume a um teste rápido — exige escuta clínica, histórico detalhado e, em crianças, conversa com pais e escola.</p>
+        <div class="grid-3">
+          <article class="card">
+            <h3>O que é avaliado</h3>
+            <p>Atenção sustentada, controle de impulsos, organização e impacto na rotina. Em adolescentes, também sono, humor e uso de telas.</p>
+          </article>
+          <article class="card">
+            <h3>O que NÃO é TDAH</h3>
+            <p>Criança agitada, desinteressada na escola ou ansiosa pode ter outros motivos. Investigamos antes de fechar diagnóstico.</p>
+          </article>
+          <article class="card">
+            <h3>Como trabalho</h3>
+            <p>Consulta inicial longa (sem pressa), devolutiva por escrito aos pais, e — se indicado — plano que pode ou não incluir medicação.</p>
+          </article>
+        </div>
+        <p class="micro-cta">Suspeita de TDAH no seu filho? <a href="https://wa.me/5551983300503?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20avalia%C3%A7%C3%A3o%20de%20TDAH%20e%20agendar%20uma%20consulta." target="_blank" rel="noopener">Fale comigo no WhatsApp</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="wrap about">
+        <picture>
+          <source type="image/webp" srcset="fotos-consultorio/web/sobre.webp?v=2" />
+          <img src="fotos-consultorio/web/sobre.jpg?v=2" width="1100" height="1188" alt="Dr. Guilherme Mota em retrato profissional" />
+        </picture>
+        <div>
+          <span class="eyebrow">Quem atende</span>
+          <h2>Dr. Guilherme Mota</h2>
+          <p>Natural de Ji-Paraná (RO), formado pela ULBRA Canoas. Médico residente de Psiquiatria na Marinha do Brasil e sócio da Akatú Psiquiatria. CRM-RJ 52.125913-0.</p>
+          <p>Atendo crianças, adolescentes e adultos: TDAH, ansiedade, depressão e burnout. Cuidar da saúde mental vai além do diagnóstico. É escutar de verdade.</p>
+          <p>Consultas particulares, com nota fiscal para reembolso no plano de saúde.</p>
+          <p class="micro-cta">Quer conversar antes de agendar? <a href="https://wa.me/5551983300503?text=Ol%C3%A1!%20Vi%20o%20site%20e%20quero%20conversar%20sobre%20uma%20consulta." target="_blank" rel="noopener">Fale comigo no WhatsApp</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sand" id="atendimento">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Onde</span>
+          <h2>Online e presencial</h2>
+        </div>
+        <div class="modes">
+          <article class="mode">
+            <h3>Online · todo o Brasil</h3>
+            <ul>
+              <li>Vídeo em plataforma segura e sigilosa</li>
+              <li>Plataforma segura e sigilosa, com validade clínica e legal conforme legislação do CFM</li>
+              <li>Mesma validade clínica e legal do presencial</li>
+            </ul>
+            <a class="btn btn-wa" data-wa onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5551983300503?text=Ol%C3%A1!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20online%20de%20psiquiatria%20infantil." target="_blank" rel="noopener">Agendar consulta</a>
+          </article>
+          <article class="mode light">
+            <h3>Atendimento pela Akatú Psiquiatria</h3>
+            <ul>
+              <li>Plataforma especializada em saúde mental online</li>
+              <li>Agendamento, prontuário e atendimento em um só lugar</li>
+              <li>Sou sócio da Akatú — você é atendido direto comigo</li>
+            </ul>
+            <a class="btn" href="https://akatupsiquiatria.com.br" target="_blank" rel="noopener">Conhecer a Akatú</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Perguntas frequentes</h2>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>Atende convênio?</summary>
+            <p>Não. O atendimento é particular. Você recebe nota fiscal para solicitar reembolso no plano.</p>
+          </details>
+          <details>
+            <summary>Consulta online vale como presencial?</summary>
+            <p>Sim. Mesma validade clínica e legal, em plataforma sigilosa, conforme normas do CFM para telemedicina.</p>
+          </details>
+          <details>
+            <summary>Criança pequena pode ser atendida online?</summary>
+            <p>Sim. A consulta online funciona bem para crianças e adolescentes, com a presença de um responsável. Na primeira avaliação, converso com os pais e observo a criança no ambiente de casa — o que muitas vezes ajuda a criança a ficar mais à vontade.</p>
+          </details>
+          <details>
+            <summary>Qual o valor da consulta?</summary>
+            <p>Valores atualizados pelo WhatsApp, para o site não ficar desatualizado.</p>
+          </details>
+          <details>
+            <summary>Psicólogo ou psiquiatra — como saber?</summary>
+            <p>Psicólogo faz terapia (conversa, técnicas comportamentais). Psiquiatra é médico, pode prescrever medicamentos e faz diagnóstico clínico. Para TDAH, ansiedade moderada/grave ou depressão na adolescência, o psiquiatra é recomendado — muitas vezes em conjunto com terapia.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta">
+          <div>
+            <h2>Pronto para o próximo passo?</h2>
+            <p>Me chame no WhatsApp e combinamos o melhor formato para o seu filho.</p>
+          </div>
+          <a class="btn btn-wa" data-wa onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5551983300503?text=Ol%C3%A1!%20Vi%20o%20site%20de%20psiquiatria%20infantil%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© 2026 Dr. Guilherme Mota · CRM-RJ 52.125913-0 · (51) 98330-0503</span>
+      <span>
+        <strong>Presencial:</strong> Av. Nelson Cardoso, 1149 – Sala 1322 – Taquara, RJ ·
+        <a href="/politica-privacidade.html">Política de Privacidade</a> ·
+        <a href="https://instagram.com/drguilhermemota" target="_blank" rel="noopener">@drguilhermemota</a>
+      </span>
+    </div>
+  </footer>
+
+  <a class="float-wa" data-wa href="https://wa.me/5551983300503?text=Ol%C3%A1!%20Vi%20o%20site%20de%20psiquiatria%20infantil%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 16.7L1 23l6.5-1.1A11 11 0 0 0 20.5 3.5zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3.9.7.7-3.8-.2-.3A9 9 0 1 1 12 20.5zm5.2-6.7c-.3-.1-1.7-.8-1.9-.9s-.5-.1-.6.1-.7.9-.9 1.1-.3.2-.6.1a7.4 7.4 0 0 1-2.2-1.4 8.2 8.2 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.6l.5-.6.1-.3c0-.1 0-.3 0-.4s-.6-1.5-.8-2-.4-.5-.6-.5h-.5c-.2 0-.4.1-.6.3s-.8.8-.8 1.9.8 2.2.9 2.3c.1.2 1.6 2.5 3.8 3.5 1.4.6 1.9.7 2.6.6.4 0 1.3-.3 1.5-.5s.8-.6.9-.9.1-.5.1-.6-.2-.2-.4-.3z"/></svg>
+  </a>
+  <div class="sticky-bar">
+    <a class="btn btn-wa" style="width:100%" data-wa onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5551983300503?text=Ol%C3%A1!%20Vi%20o%20site%20de%20psiquiatria%20infantil%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+  </div>
+  <script>
+    document.querySelectorAll("[data-wa]").forEach(function (el) {
+      el.addEventListener("click", function () {
+        if (window.gtag) window.gtag("event", "whatsapp_click");
+      });
+    });
+  </script>
+</body>
+</html>
