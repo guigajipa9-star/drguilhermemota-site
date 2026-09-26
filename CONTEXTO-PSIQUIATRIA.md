@@ -2,7 +2,31 @@
 
 > **Este arquivo existe porque a troca de modelo (MiniMax M3 → DeepSeek V4 Flash) perdeu contexto.**
 > Qualquer modelo novo deve ler este arquivo ANTES de responder sobre o projeto da psiquiatria.
-> Última atualização: **25/set/2026** · Mantido por Hermes Agent.
+> Última atualização: **26/set/2026 06h30** · Mantido por Hermes Agent.
+
+---
+
+## 🔥 AÇÕES 26/set/2026 (manhã, campanha 24232088104)
+
+### Implementado via API hoje:
+
+| Ação | Status | Detalhe |
+|---|---|---|
+| +13 KW negativas em nível de campanha | ✅ OK | psicanalista, preco, valor, tabela, quanto custa, tarja preta, ansiolitico, emergencia psiquiatrica, surto psicotico, cooperado, associado, orcamento, custo (todas BROAD) |
+| Pausar `dr guilherme mota` (KW branded) | ✅ OK | 1 clique, 0 conv, R$ 11,18 desperdiçado em 30d |
+| Pausar `psiquiatra infantil preco popular` | ❌ Não era KW positiva | Era NEGATIVE criterion do Grupo 1 (já estava bloqueando) |
+| Pausar `bebe`/`infantil`/`crianca` (Grupo Adolescentes) | ❌ Não eram KW positivas | Eram NEGATIVE criteria do grupo (já estavam bloqueando) |
+
+**Total de KW negativas DE CAMPANHA: 70 → 83 (após 26/set manhã).**
+
+### Diagnóstico adicional 26/set (verificação 10x):
+
+- **KW campeã:** `psiquiatra infantil` (R$ 758,86, 26 conv, CPA R$ 29,19)
+- **CPA excelente:** R$ 26,59 (top 5% do nicho)
+- **CPC subindo:** R$ 5,42 (21/set) → R$ 14,19 (25/set). Monitorar.
+- **Mobile 89% das conversões** — LP standalone-mobile.html está sendo usado.
+- **Pico de conversão:** 10-15h (CPA R$ 12-23); madrugada (00-06h) tem cliques sem conversão.
+- **KW de concorrentes** (`daniel segenreich`, `dr fabio barbirato psiquiatra`) ainda estão ativas como KW POSITIVAS no Grupo 1 — decisão estratégica pendente.
 
 ---
 
