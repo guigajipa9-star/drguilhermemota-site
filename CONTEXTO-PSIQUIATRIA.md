@@ -19,6 +19,27 @@
 
 **Total de KW negativas DE CAMPANHA: 70 → 83 (após 26/set manhã).**
 
+### 2ª onda de ações (26/set manhã, após verificação):
+
+| Ação | Status | Detalhe |
+|---|---|---|
+| +2 KW negativas de concorrentes | ✅ OK | daniel segenreich, dr fabio barbirato psiquiatra (BROAD) — compliance CFM 2.336 Art.7 |
+| ad_schedule: bloquear Sábado e Domingo | ✅ OK | 5 critérios antigos removidos + 7 novos criados |
+
+**Total de KW negativas DE CAMPANHA: 83 → 85.**
+
+### AD_SCHEDULE configurado (26/set 07h):
+
+| Dia | Horário | bid_modifier | Status |
+|---|---|---|---|
+| MONDAY | 06h-23h | 1.00 | VEICULA |
+| TUESDAY | 06h-23h | 1.00 | VEICULA |
+| WEDNESDAY | 06h-23h | 1.00 | VEICULA |
+| THURSDAY | 06h-23h | 1.00 | VEICULA |
+| FRIDAY | 06h-23h | 1.00 | VEICULA |
+| SATURDAY | 00h-23h | 0.10 | BLOQUEADO |
+| SUNDAY | 00h-23h | 0.10 | BLOQUEADO |
+
 ### Diagnóstico adicional 26/set (verificação 10x):
 
 - **KW campeã:** `psiquiatra infantil` (R$ 758,86, 26 conv, CPA R$ 29,19)
