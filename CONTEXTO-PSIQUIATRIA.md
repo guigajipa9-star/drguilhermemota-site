@@ -2,7 +2,7 @@
 
 > **Este arquivo existe porque a troca de modelo (MiniMax M3 → DeepSeek V4 Flash) perdeu contexto.**
 > Qualquer modelo novo deve ler este arquivo ANTES de responder sobre o projeto da psiquiatria.
-> Última atualização: **26/set/2026 06h30** · Mantido por Hermes Agent.
+> Última atualização: **26/set/2026 07h25** · Mantido por Hermes Agent.
 
 ---
 
@@ -48,6 +48,71 @@
 - **Mobile 89% das conversões** — LP standalone-mobile.html está sendo usado.
 - **Pico de conversão:** 10-15h (CPA R$ 12-23); madrugada (00-06h) tem cliques sem conversão.
 - **KW de concorrentes** (`daniel segenreich`, `dr fabio barbirato psiquiatra`) ainda estão ativas como KW POSITIVAS no Grupo 1 — decisão estratégica pendente.
+
+---
+
+## 🔥 AÇÕES 26/set/2026 (manhã, conta AKATÚ — campanha 24265585325 "CONSULTAS ONLINE")
+
+### Implementado via API:
+
+| Ação | Status | Detalhe |
+|---|---|---|
+| Budget R$ 50 → R$ 10/dia | ✅ OK | campanha 24265585325 (CONSULTAS ONLINE) |
+| +8 KW negativas de campanha | ✅ OK | gratis [EXACT], barato, 24 horas, psymeet, valor social, popular, com laudo, com rqe (BROAD) |
+| Pausar 2 KW EXACT | ✅ OK | agendar psiquiatra online, psiquiatra particular online (PHRASE já cobre) |
+| ad_schedule: bloquear 00-06h todos os dias | ✅ OK | 42 critérios criados |
+
+### Estado final CONSULTAS ONLINE:
+
+| Item | Antes | Agora |
+|---|---|---|
+| Budget | R$ 50/dia | R$ 10/dia |
+| KW positivas | 12 | 10 |
+| KW negativas | 3 | 11 |
+| KW EXACT pausadas | 0 | 2 |
+| ad_schedule | vazio | 42 critérios |
+| Conversões | 0 | 0 (tag ausente) |
+
+---
+
+## 🔥 AÇÕES 26/set/2026 (manhã, conta AKATÚ — campanha 24279727893 "SECRETARIADO")
+
+### Implementado via API:
+
+| Ação | Status | Detalhe |
+|---|---|---|
+| Bloquear Sábado e Domingo | ✅ OK | 2 critérios AD_SCHEDULE com bid_mod=0.1 (00-23h) |
+| Recriar ad_schedule Seg-Sex com bid_mod=1.0 | ✅ OK | 5 antigos removidos (bug bid_mod=0.0), 5 novos criados |
+| +8 KW negativas de campanha | ✅ OK | gratis [EXACT], barato, 24 horas, psymeet, valor social, popular, com laudo, com rqe |
+| Pausar 6 KW com 0 impressão | ✅ OK | 4 WhatsApp + 2 variantes redundantes |
+| Budget R$ 10 → R$ 50/dia | ✅ OK | aplicado |
+
+### Estado final SECRETARIADO:
+
+| Item | Antes | Agora |
+|---|---|---|
+| Budget | R$ 10/dia | R$ 50/dia |
+| KW positivas | 9 | 3 |
+| KW PHRASE pausadas | 0 | 6 |
+| KW negativas | 23 | 31 |
+| ad_schedule | 5 (bug) | 7 (corretos) |
+| Sábado-Domingo | Rodando | Bloqueado |
+| KW ativas | 9 | 3 (marcar consulta..., marcar..., atendimento imediato) |
+| Conversões | 0 | 0 (tag ausente) |
+
+### KW ativas restantes (3 que funcionam):
+- `marcar consulta psiquiatra online` [PHRASE] — 26 imp, 9 clq
+- `marcar psiquiatra online` [EXACT] — 14 imp, 2 clq
+- `psiquiatra atendimento imediato` [PHRASE] — 9 imp, 2 clq
+
+### Achados críticos da rodada:
+- **IS perdido 55% por RANK** (não budget) — copy/LP perdem leilão
+- **KW REMOVIDAS** com imp residuais (não grave, 0 cliques)
+- **Headline problemática**: "Agende uma consulta agora!" (exclamação + imperativo, risco CFM Art.8)
+
+### Documentos relacionados:
+- `auditoria-24265585325-2026-09-26.md` (auditoria da campanha CONSULTAS ONLINE)
+- `auditoria-secretariado-2026-09-26.md` (auditoria da campanha SECRETARIADO)
 
 ---
 
