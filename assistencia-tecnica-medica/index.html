@@ -43,6 +43,9 @@
     .hero { padding:90px 0 82px; background:var(--paper); }
     .eyebrow { display:block; font-size:.78rem; text-transform:uppercase; letter-spacing:.14em; color:var(--olive); font-weight:700; margin-bottom:16px; }
     .lead { max-width:66ch; font-size:1.2rem; color:var(--muted); }
+    .hero-action { display:flex; flex-wrap:wrap; align-items:center; gap:10px 20px; margin-top:22px; }
+    .hero-action .btn { background:var(--olive); color:var(--paper); margin:0; }
+    .hero-action .small { font-size:.85rem; color:var(--muted); }
     .ident { font-size:.9rem; color:var(--olive); font-weight:600; margin-top:30px; }
     .section { padding:74px 0; }
     .section.paper { background:var(--paper); }
@@ -53,6 +56,11 @@
     .card { padding:28px; background:var(--paper); border:1px solid var(--line); border-radius:16px; }
     .paper .card { background:var(--cream); }
     .card p { color:var(--muted); margin-bottom:0; }
+    .scope-list { max-width:760px; margin-top:26px; }
+    .scope-list li { margin-bottom:14px; }
+    .profile { display:grid; grid-template-columns:minmax(190px,280px) 1fr; align-items:center; gap:36px; }
+    .profile img { display:block; width:100%; aspect-ratio:4/5; object-fit:cover; object-position:center top; border-radius:16px; }
+    .profile p { color:var(--muted); }
     .number { font-size:.78rem; color:var(--olive); font-weight:700; letter-spacing:.12em; }
     .note { max-width:74ch; margin-top:30px; padding:22px 25px; background:var(--paper); border-left:3px solid var(--olive); }
     .note p:last-child { margin-bottom:0; }
@@ -70,7 +78,7 @@
     footer { padding:34px 0; font-size:.9rem; color:var(--muted); }
     footer .wrap { display:flex; justify-content:space-between; gap:22px; flex-wrap:wrap; }
     footer a { margin-right:16px; }
-    @media(max-width:700px) { body { font-size:16px; } .hero { padding:64px 0; } .section { padding:55px 0; } .grid { grid-template-columns:1fr; } .nav { min-height:68px; } }
+    @media(max-width:700px) { body { font-size:16px; } .hero { padding:64px 0; } .section { padding:55px 0; } .grid,.profile { grid-template-columns:1fr; } .profile img { width:min(100%,280px); } .nav { min-height:68px; } }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
   </style>
 </head>
@@ -87,7 +95,11 @@
       <div class="wrap">
         <span class="eyebrow">Atuação médico-pericial</span>
         <h1 id="titulo">Assistência técnica médica em questões psiquiátricas</h1>
-        <p class="lead">Apoio técnico na análise de questões médicas em perícias. O trabalho pode envolver estudo dos documentos, acompanhamento do exame pericial quando cabível e análise do laudo, sempre conforme o objeto da demanda e os elementos disponíveis.</p>
+        <p class="lead">Análise médico-documental e apoio técnico em perícias judiciais que envolvam saúde mental, capacidade funcional e possíveis relações entre adoecimento psíquico e trabalho. O escopo depende da avaliação individual da demanda.</p>
+        <div class="hero-action">
+          <a class="btn" href="https://wa.me/5551983300503?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20assist%C3%AAncia%20t%C3%A9cnica%20m%C3%A9dica%20em%20uma%20per%C3%ADcia.%20Posso%20informar%20o%20tipo%20de%20demanda%20e%20a%20fase%20do%20processo." target="_blank" rel="noopener noreferrer">Consultar disponibilidade para assistência técnica</a>
+          <span class="small">Informe o tipo de demanda e a fase do processo, sem enviar documentos clínicos no primeiro contato.</span>
+        </div>
         <p class="ident">Dr. Guilherme Mota · MÉDICO · CRM-RJ 52.125913-0</p>
       </div>
     </section>
@@ -97,6 +109,19 @@
         <h2 id="papel">Uma análise técnica para uma das partes</h2>
         <p>O assistente técnico médico é indicado por uma das partes para examinar as questões médicas discutidas na perícia. Sua atuação é distinta da do perito nomeado pelo juízo. O assistente não conduz o processo, não decide a causa e não substitui o trabalho do advogado.</p>
         <p>Em questões psiquiátricas, é importante distinguir o que os documentos registram, o que foi relatado, o que pode ser avaliado tecnicamente e o que ainda precisa ser esclarecido.</p>
+      </div>
+    </section>
+    <section class="section sand" aria-labelledby="demandas">
+      <div class="wrap intro">
+        <span class="eyebrow">Demandas que avalio</span>
+        <h2 id="demandas">O objeto da perícia precisa estar dentro do meu campo de atuação</h2>
+        <p>Avalio a possibilidade de atuar como assistente técnico em perícias judiciais com questões médicas relacionadas à saúde mental, especialmente quando há discussão sobre adoecimento e trabalho. Cada solicitação depende da análise do objeto pericial, dos documentos disponíveis, da fase do processo e da viabilidade do acompanhamento.</p>
+        <ul class="scope-list">
+          <li>Repercussões funcionais de condições psíquicas e discussão de incapacidade em períodos determinados.</li>
+          <li>Possível nexo ou concausa entre adoecimento psíquico e trabalho, quando essa for uma questão da perícia.</li>
+          <li>Discussões médicas envolvendo a natureza de benefício previdenciário, quando vinculadas ao objeto pericial.</li>
+        </ul>
+        <p>Esta apresentação não anuncia assistência para qualquer modalidade de perícia, nem garante reconhecimento de incapacidade, nexo ou alteração de benefício.</p>
       </div>
     </section>
     <section class="section paper" aria-labelledby="atuacao">
@@ -120,6 +145,18 @@
         <h2 id="questoes">Saúde mental, função e trabalho</h2>
         <p>Uma perícia pode discutir diagnóstico, evolução clínica, repercussões funcionais, incapacidade em determinado período e possível relação entre adoecimento e trabalho. São perguntas diferentes e exigem análise separada. A existência de um diagnóstico ou de um benefício previdenciário, por si só, não resolve a discussão sobre incapacidade ou nexo.</p>
         <div class="note"><p>Em disputas que envolvem benefícios como B31 e B91, o assistente técnico examina os elementos médicos pertinentes. Não decide a espécie do benefício nem garante sua alteração.</p></div>
+      </div>
+    </section>
+    <section class="section paper" aria-labelledby="profissional">
+      <div class="wrap profile">
+        <img src="/fotos-consultorio/web/sobre.webp" width="1100" height="1188" loading="lazy" alt="Foto profissional do Dr. Guilherme Mota" />
+        <div>
+          <span class="eyebrow">Quem realiza a análise</span>
+          <h2 id="profissional">Dr. Guilherme Mota</h2>
+          <p><strong>MÉDICO · CRM-RJ 52.125913-0.</strong> Formado em Medicina pela ULBRA Canoas. Médico residente de Psiquiatria na Marinha do Brasil.</p>
+          <p>Desenvolvo a análise técnica com atenção à consistência dos documentos, à evolução clínica e aos limites das conclusões possíveis. Distingo fatos documentados, informações relatadas e hipóteses médicas para responder às questões pertinentes ao escopo da demanda.</p>
+          <p>A assistência técnica não substitui o perito nomeado pelo juízo nem a condução jurídica do processo.</p>
+        </div>
       </div>
     </section>
     <section class="section" aria-labelledby="processo">
