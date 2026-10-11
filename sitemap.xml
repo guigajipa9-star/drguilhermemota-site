@@ -30,6 +30,20 @@
   </url>
 
   <url>
+    <loc>https://www.drguilhermemota.com.br/blog/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.drguilhermemota.com.br/blog/bpc-loas/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://www.drguilhermemota.com.br/politica-privacidade.html</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>yearly</changefreq>
