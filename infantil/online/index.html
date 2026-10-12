@@ -285,6 +285,7 @@
     }
     .nav-links { display: flex; gap: 22px; color: var(--muted); font-size: 0.94rem; }
     .nav-links a { text-decoration: none; }
+    .mobile-nav { display: none; }
     h1, h2, h3 { font-family: Fraunces, Georgia, serif; line-height: 1.12; font-weight: 600; }
     .eyebrow {
       display: inline-block;
@@ -536,6 +537,34 @@
     .sticky-bar { display: none; }
     @media (max-width: 900px) {
       .nav-links { display: none; }
+      .nav > .btn-wa { display: none; }
+      .mobile-nav {
+        display: block; flex-shrink: 0; margin-left: auto;
+        background: transparent; border: 0; border-radius: 0; padding: 0;
+      }
+      .mobile-nav summary {
+        display: flex; align-items: center; justify-content: center; gap: 8px;
+        min-height: 44px; padding: 8px 12px; list-style: none; cursor: pointer;
+        border: 1px solid var(--line); border-radius: 12px;
+        background: var(--paper); color: var(--ink); font-weight: 600;
+      }
+      .mobile-nav summary::-webkit-details-marker { display: none; }
+      .mobile-nav nav {
+        position: absolute; top: 100%; left: 0; right: 0;
+        display: grid; padding: 8px 20px 16px; background: var(--cream);
+        border-bottom: 1px solid var(--line); box-shadow: 0 12px 20px rgba(28, 26, 18, .12);
+        max-height: calc(100vh - 190px); max-height: calc(100svh - 190px);
+        overflow-y: auto; overscroll-behavior: contain;
+      }
+      .mobile-nav nav a {
+        display: flex; align-items: center; min-height: 48px; padding: 10px 12px;
+        color: var(--ink); text-decoration: none; border-radius: 8px;
+      }
+      .mobile-nav nav a:hover { background: var(--paper); }
+      .mobile-nav summary:focus-visible, .mobile-nav nav a:focus-visible {
+        outline: 2px solid var(--olive); outline-offset: 2px;
+      }
+      #consulta, #sobre, #proof, #atendimento, #faq { scroll-margin-top: 90px; }
       .hero { grid-template-columns: 1fr; min-height: 0; }
       .hero-copy { padding: 36px 20px 28px; }
       .hero-photo { min-height: 420px; }
@@ -577,9 +606,56 @@
               <a href="#sobre">Sobre</a>
               <a href="#faq">FAQ</a>
             </nav>
+      <details class="mobile-nav">
+        <summary>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          Menu
+        </summary>
+        <nav aria-label="Navegação móvel">
+          <a href="#consulta">Como funciona</a>
+          <a href="#sobre">Quem atende</a>
+          <a href="#proof">Avaliações</a>
+          <a href="#atendimento">Onde atendo</a>
+          <a href="#faq">Perguntas frequentes</a>
+        </nav>
+      </details>
       <a class="btn btn-wa" data-wa onclick="return gtag_report_conversion(this.href);" href="https://wa.me/5551983300503?text=Ol%C3%A1!%20Vi%20o%20site%20de%20psiquiatria%20infantil%20e%20gostaria%20de%20agendar%20uma%20consulta%20para%20meu%20filho(a)." target="_blank" rel="noopener">Agendar</a>
     </div>
   </header>
+  <script>
+    // Navegação móvel: mantém os links nativos e leva o foco à seção escolhida.
+    (function () {
+      var menu = document.querySelector('.mobile-nav');
+      if (!menu) return;
+      var summary = menu.querySelector('summary');
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && menu.open) {
+          menu.open = false;
+          summary.focus();
+        }
+      });
+      document.addEventListener('click', function (event) {
+        if (menu.open && !menu.contains(event.target)) menu.open = false;
+      });
+      var mobile = window.matchMedia('(max-width: 900px)');
+      if (mobile.addEventListener) mobile.addEventListener('change', function (event) {
+        if (!event.matches) menu.open = false;
+      });
+      menu.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          menu.open = false;
+          var section = document.getElementById(link.getAttribute('href').slice(1));
+          if (!section) return;
+          var hadTabindex = section.hasAttribute('tabindex');
+          if (!hadTabindex) section.setAttribute('tabindex', '-1');
+          section.focus({ preventScroll: true });
+          if (!hadTabindex) section.addEventListener('blur', function () {
+            section.removeAttribute('tabindex');
+          }, { once: true });
+        });
+      });
+    })();
+  </script>
 
   <main id="topo">
     <section class="hero">
